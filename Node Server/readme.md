@@ -18,17 +18,14 @@ Overall, Node.js is a popular choice for building server-side applications due t
 ----
 
 
-<span>
-  text
- </span>
   
-TheBuffSeagull
-make a node.js server that displays an html form for first name last name and email and then writes the entries to a text file  
-Here is an example of how you could create a Node.js server that displays an HTML form and writes the form data to a text file:
+TheBuffSeagull   
+make a node.js server that displays an html form for first name last name and email and then writes the entries to a text file    
+Here is an example of how you could create a Node.js server that displays an HTML form and writes the form data to a text file:  
 
-Copy code
-const http = require('http');
-const fs = require('fs');
+Copy code  
+const http = require('http');  
+const fs = require('fs');  
 
 const server = http.createServer((req, res) => {
   if (req.method === 'GET') {
