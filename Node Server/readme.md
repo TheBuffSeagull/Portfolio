@@ -1,6 +1,6 @@
 # Node.js form to json file project
 
-###Made this using ChatGPT and Copilot. The bots did the heavy lifting but I just directed it to what I wanted to do and manually editted the bugs out. For having no practical knowledge to go to this is kind of crazy. I'm going to copy and paste the chat that was used when making this program below. 
+### Made this using ChatGPT and Copilot. The bots did the heavy lifting but I just directed it to what I wanted to do and manually editted the bugs out. For having no practical knowledge to go to this is kind of crazy. I'm going to copy and paste the chat that was used when making this program below. 
 
 
 
