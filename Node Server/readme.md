@@ -18,8 +18,8 @@ Overall, Node.js is a popular choice for building server-side applications due t
 
 
 
-TheBuffSeagull
-make a node.js server that displays an html form for first name last name and email and then writes the entries to a text file
+### TheBuffSeagull
+### make a node.js server that displays an html form for first name last name and email and then writes the entries to a text file  
 Here is an example of how you could create a Node.js server that displays an HTML form and writes the form data to a text file:
 
 Copy code
@@ -67,8 +67,8 @@ This server listens for incoming HTTP requests on port 8080. If the request meth
 
 
 
-TheBuffSeagull
-write a regex expression that checks if an email is valid and put it in the above code
+### TheBuffSeagull
+### write a regex expression that checks if an email is valid and put it in the above code
 To check if an email is valid, you can use a regular expression (regex) to match the email against a pattern. Here is an example of a regex that can be used to check if an email is valid:
 
 Copy code
@@ -138,8 +138,8 @@ const server = http.createServer((req, res) => {
 
 
 
-TheBuffSeagull
-continue from res.write(`<input type="text"
+### TheBuffSeagull  
+### continue from res.write(`<input type="text"  
 Sure! Here is the rest of the code:
 
 Copy code
@@ -166,8 +166,8 @@ This code sends an HTML page to the client that includes the original form, with
 
 
 
-TheBuffSeagull
-can you make the html look nicer?
+### TheBuffSeagull
+### can you make the html look nicer?
 Certainly! Here is an example of how you can modify the HTML to make the form look nicer:
 
 Copy code
@@ -231,8 +231,8 @@ I hope this helps! Let me know if you have any questions.
 
 
 
-TheBuffSeagull
-put it inside the node.js script we made
+### TheBuffSeagull
+### put it inside the node.js script we made  
 Here is how you can modify the Node.js script to include the styled HTML form:
 
 Copy code
@@ -278,8 +278,8 @@ c;border-radius: 4px;box-sizing: border-box;}input[type="submit"] {width: 100%;h
 
 
 
-TheBuffSeagull
-continue from res.statusCode = 303
+### TheBuffSeagull
+### continue from res.statusCode = 303  
 Sure! Here is the rest of the code:
 
 Copy code
@@ -298,8 +298,8 @@ I hope this helps! Let me know if you have any questions.
 
 
 
-TheBuffSeagull
-the above code is great but I'm able to see ${data.firstName} ${data.lastName} ${data.email} inside the form boxes. How can I make sure these aren't visible on the website
+### TheBuffSeagull
+### the above code is great but I'm able to see ${data.firstName} ${data.lastName} ${data.email} inside the form boxes. How can I make sure these aren't visible on the website  
 To make sure that the form data is not visible in the input fields, you can use the decodeURIComponent() function to decode the form data before inserting it into the HTML. Here is an example of how you can modify the code to do this:
 
 Copy code
@@ -313,8 +313,8 @@ const server = http.createServer((req, res) => {
 
 
 
-TheBuffSeagull
-continue from id="lastName" name="lastName"><br><label for="email">Email:</
+### TheBuffSeagull
+#### continue from id="lastName" name="lastName"><br><label for="email">Email:</  
 Certainly! Here is the rest of the code:
 
 Copy code
@@ -338,8 +338,8 @@ input type="text" id="email" name="email"><br><br><input type="submit" value="Su
 
 
 
-TheBuffSeagull
-continue from for="firstName">First Name:</label><input type="text" id="firstName" name="first
+### TheBuffSeagull
+### continue from for="firstName">First Name:</label><input type="text" id="firstName" name="first  
 Certainly! Here is the rest of the code:
 
 Copy code
@@ -365,8 +365,8 @@ I hope this helps! Let me know if you have any questions.
 
 
 
-TheBuffSeagull
-the email input box doesn't load with the rest of the page only the first time
+### TheBuffSeagull
+### the email input box doesn't load with the rest of the page only the first time
 It looks like you are only rendering the form data in the input fields if the email is invalid. This is why the form data is only displayed the first time the page is loaded, when the email is not yet defined.
 
 To fix this, you can modify the code to display the form data in the input fields regardless of the email's validity. Here is an example of how you can do this:
@@ -382,8 +382,8 @@ const server = http.createServer((req, res) => {
 
 
 
-TheBuffSeagull
-the form-data.txt is being overwritten each time someone fills out the form. Can we make it store each entry uniquely with its own serial number and date
+### TheBuffSeagull
+### the form-data.txt is being overwritten each time someone fills out the form. Can we make it store each entry uniquely with its own serial number and date  
 Certainly! Here is an example of how you can modify the code to store each form submission in a separate file with a unique serial number and date:
 
 Copy code
@@ -415,8 +415,8 @@ const server = http.createServer((req, res) => {
 
 
 
-TheBuffSeagull
-lets not store them as separate files though. Lets store all the entires in one file with a unique serial and date. 
+### TheBuffSeagull
+### lets not store them as separate files though. Lets store all the entires in one file with a unique serial and date.   
 Certainly! Here is an example of how you can modify the code to store all form submissions in a single file, with a unique serial number and date for each entry:
 
 Copy code
@@ -447,8 +447,8 @@ const server = http.createServer((req, res) => {
 
 
 
-TheBuffSeagull
-lets not use that version anymore. I fixed some things so lets use my version. Can we add the unique id change and storing all the entries in one file change to this version of the code:
+### TheBuffSeagull
+### lets not use that version anymore. I fixed some things so lets use my version. Can we add the unique id change and storing all the entries in one file change to this version of the code:
 
 const http = require('http');
 const fs = require('fs');
@@ -505,8 +505,8 @@ const server = http.createServer((req, res) => {
 
 
 
-TheBuffSeagull
-continue from id="lastName" name="lastName"><br><label for="email">Email:</label><
+### TheBuffSeagull
+### continue from id="lastName" name="lastName"><br><label for="email">Email:</label><
 Certainly! Here is the rest of the code:
 
 Copy code
@@ -533,8 +533,8 @@ input type="text" id="email" name="email"><br><input type="submit" value="Submit
 
 
 
-TheBuffSeagull
-continue from // Generate
+### TheBuffSeagull
+### continue from // Generate
 Certainly! Here is the rest of the code:
 
 Copy code
@@ -562,8 +562,8 @@ This code generates a unique ID by using the current timestamp (provided by Date
 
 
 
-TheBuffSeagull
-save the form-data.txt in a json file instead indented to the 2nd level
+### TheBuffSeagull
+### save the form-data.txt in a json file instead indented to the 2nd level
 Certainly! Here is an example of how you can modify the code to store the form submissions in a JSON file, indented to the second level:
 
 Copy code
@@ -577,8 +577,8 @@ const server = http.createServer((req, res) => {
 
 
 
-TheBuffSeagull
-continue from </form></body></ until you reach the end of the code
+### TheBuffSeagull
+### continue from </form></body></ until you reach the end of the code
 Certainly! Here is the rest of the code:
 
 Copy code
@@ -610,8 +610,8 @@ Copy code
 
 
 
-TheBuffSeagull
-continue from </form></body></ 
+### TheBuffSeagull
+### continue from </form></body></ 
 Certainly! Here is the rest of the code:
 
 Copy code
@@ -634,8 +634,8 @@ Copy code
 
 
 
-TheBuffSeagull
-please just start from the beginning and keep going until you reach the end
+### TheBuffSeagull
+### please just start from the beginning and keep going until you reach the end
 Certainly! Here is the code to create a Node.js server that displays an HTML form for first name, last name, and email, and then writes the form entries to a JSON file with a unique serial number and date:
 
 Copy code
@@ -662,8 +662,8 @@ const server = http.createServer((req, res) => {
 
 
 
-TheBuffSeagull
-continue from Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](
+### TheBuffSeagull
+### continue from Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](
 Certainly! Here is the rest of the code:
 
 Copy code
@@ -704,8 +704,8 @@ Copy code
 
 
 
-TheBuffSeagull
-continue from res.write('<html><body><h1>Error: 500 Internal Server Error</
+### TheBuffSeagull
+### continue from res.write('<html><body><h1>Error: 500 Internal Server Error</
 Certainly! Here is the rest of the code:
 
 Copy code
