@@ -1,6 +1,6 @@
 # Node.js form to json file project
 
-# Made this using ChatGPT and Copilot. The bots did the heavy lifting but I just directed it to what I wanted to do and manually editted the bugs out. For having no practical knowledge to go to this is kind of crazy. I'm going to copy and paste the chat that was used when making this program below. 
+# "I created this using ChatGPT and Copilot. The bots did most of the work, but I directed them and edited out any bugs. It's impressive that I was able to do this without much practical knowledge. I'm including the chat logs below that were used to create this program."
 
 
 
