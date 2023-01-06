@@ -6,7 +6,6 @@
 
 ----
 
-node.js explaination
 Node.js is a runtime environment for executing JavaScript code outside of a browser. It allows developers to build and run server-side applications with JavaScript. Node.js is built on top of the V8 JavaScript engine, which is the same engine that powers the Google Chrome web browser.
 
 One of the key benefits of Node.js is its ability to handle a large number of concurrent connections with high performance. This makes it well-suited for building real-time applications such as chat rooms, news feeds, and online games.
