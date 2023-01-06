@@ -23,44 +23,44 @@ TheBuffSeagull
 make a node.js server that displays an html form for first name last name and email and then writes the entries to a text file    
 Here is an example of how you could create a Node.js server that displays an HTML form and writes the form data to a text file:  
 
-Copy code  
-const http = require('http');  
-const fs = require('fs');  
+Copy code    
+const http = require('http');    
+const fs = require('fs');    
 
-const server = http.createServer((req, res) => {
-  if (req.method === 'GET') {
-    res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write('<html><body><form action="/submit" method="post">');
-    res.write('<label for="firstName">First Name:</label><br>');
-    res.write('<input type="text" id="firstName" name="firstName"><br>');
-    res.write('<label for="lastName">Last Name:</label><br>');
-    res.write('<input type="text" id="lastName" name="lastName"><br>');
-    res.write('<label for="email">Email:</label><br>');
-    res.write('<input type="text" id="email" name="email"><br><br>');
-    res.write('<input type="submit" value="Submit">');
-    res.write('</form></body></html>');
-    return res.end();
-  } else if (req.method === 'POST') {
-    let body = '';
-    req.on('data', chunk => {
-      body += chunk.toString(); // convert Buffer to string
-    });
-    req.on('end', () => {
-      const formData = body.split('&').map(pair => pair.split('='));
-      const data = formData.reduce((acc, pair) => {
-        acc[pair[0]] = pair[1];
-        return acc;
-      }, {});
-      fs.writeFile('form-data.txt', JSON.stringify(data), err => {
-        if (err) throw err;
-        console.log('Data written to file');
-      });
-      res.statusCode = 303;
-      res.setHeader('Location', '/');
-      return res.end();
-    });
-  }
-});
+const server = http.createServer((req, res) => {  
+  if (req.method === 'GET') {  
+    res.writeHead(200, { 'Content-Type': 'text/html' });  
+    res.write('<html><body><form action="/submit" method="post">');  
+    res.write('<label for="firstName">First Name:</label><br>');  
+    res.write('<input type="text" id="firstName" name="firstName"><br>');  
+    res.write('<label for="lastName">Last Name:</label><br>');  
+    res.write('<input type="text" id="lastName" name="lastName"><br>');  
+    res.write('<label for="email">Email:</label><br>');  
+    res.write('<input type="text" id="email" name="email"><br><br>');  
+    res.write('<input type="submit" value="Submit">');  
+    res.write('</form></body></html>');    
+    return res.end();  
+  } else if (req.method === 'POST') {  
+    let body = '';  
+    req.on('data', chunk => {  
+      body += chunk.toString(); // convert Buffer to string  
+    });  
+    req.on('end', () => {  
+      const formData = body.split('&').map(pair => pair.split('='));  
+      const data = formData.reduce((acc, pair) => {  
+        acc[pair[0]] = pair[1];  
+        return acc;  
+      }, {});  
+      fs.writeFile('form-data.txt', JSON.stringify(data), err => {  
+        if (err) throw err;  
+        console.log('Data written to file'); 
+      });  
+      res.statusCode = 303;  
+      res.setHeader('Location', '/');  
+      return res.end();  
+    });   
+  }  
+});  
 
 server.listen(8080);
 This server listens for incoming HTTP requests on port 8080. If the request method is GET, it sends an HTML form to the client. If the request method is POST, it reads the form data from the request body and writes it to a text file.
